@@ -1,0 +1,432 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    font-family: 'Roboto', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* Стили для контента после 600px */
+
+@media screen and (min-width: 600px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    .dropdown-button {
+        min-width: 200px;
+    }
+    .dropdown-content {
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .dropdown-button {
+        min-width: 250px;
+    }
+    .dropdown-content {
+        min-width: 250px;
+    }
+}
+
+/* Стили для контента до 600px */
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767px) {
+    .bottomLine-columns {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .footer__downloads {
+        gap: 24px;
+    }
+
+    .downloads-button {
+        margin-top: 24px;
+        margin-bottom: 24px;
+    }
+}
+
+@media (max-width: 767px) {
+    .information-content {
+        flex-direction: column;
+    }
+    .information-socialNetwork-icons {
+        margin-bottom: 39px;
+    }
+}
+
+@media (max-width: 767px) {
+    .restaurant__cards.row {
+        justify-content: center;
+    }
+}
+
+/*nav*/
+nav {
+    position: fixed;
+    background-color: white;
+    z-index: 999;
+    width: 100%;
+    box-shadow: 0 0 16px 0 rgba(38, 38, 38, 0.1);
+    top: 0;
+}
+
+header {
+    height: 72px;
+}
+
+.nav__container  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 72px;
+}
+
+.nav__logo {
+
+}
+
+.nav__buttons{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__button-login-text {
+    font-size: 15px;
+    font-weight: 500;
+    color: #1D1D1D;
+}
+
+.nav__button-basket {
+    margin-left: 16px;
+}
+
+.nav__button-login button {
+    padding: 10px 20px;
+    border: 1px solid #E0E0E0; /* добавляем 'solid' для указания типа границы */
+    background-color: white;
+    border-radius: 2px;
+}
+
+.nav__button-login-text {
+    font-weight: 500;
+}
+
+/*search*/
+
+.search__bar {
+    padding-top: 70px;
+    border-bottom: 1px solid rgba(98, 98, 98, 0.4);
+}
+
+.search__bar-text {
+    color: rgba(98, 98, 98, 0.4);
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+.search {
+    margin-bottom: 56px;
+}
+
+.restaurant-title {
+    font-weight: 400;
+    font-size: 22px;
+    color: #1D1D1D;
+    vertical-align: baseline;
+}
+/*cards*/
+.card {
+    margin-bottom: 16px;
+    margin-top: 16px;
+}
+
+.cards-header, .card-text {
+    text-align: left;
+    margin-bottom: 4px;
+}
+
+.cards-header, .card-time {
+    color: #1D1D1D;
+}
+
+.card-price {
+    color: #626262 ;
+    font-weight: 400;
+    font-size: 16px;
+    vertical-align: baseline;
+}
+
+.cards-header {
+    font-weight: 400;
+    font-size: 18px;
+    vertical-align: baseline;
+}
+
+.card img {
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.card-time {
+    margin-bottom: 16px;
+    font-weight: 400;
+    font-size: 15px;
+    vertical-align: baseline;
+}
+
+/*footer*/
+
+/*footer logo*/
+
+.footer {
+    background-color: #262626;
+    
+}
+
+.information-logo-img{
+    height: 20px;
+    width: 191px;
+    margin-top: 56px;
+    margin-bottom: 40px;
+}
+
+.information-logo {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+/*
+footer info*/
+
+.information-content {
+    padding-top: 32px;
+    padding-bottom: 48px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.information-columns {
+    flex-basis: 33.33%;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.information-socialNetwork-icons {
+    margin-top: 17px;
+}
+
+.information-socialNetwork-icon {
+    width: 24px;
+    height: 24px;
+}
+
+.information-socialNetwork-text-octothorpe {
+    color: #49A144;
+    font-size: 15px;
+    font-weight: 400;
+    margin-right: 1px;
+}
+
+.information-socialNetwork-text-brand {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.information-socialNetwork-text {
+    display: flex;
+}
+
+.information-partner-text {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.information-about-text {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+/*
+скачать*/
+
+.footer__downloads-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.4);
+}
+
+.downloads-button {
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+/*
+Самый низ*/
+
+.bottomLine-columns {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.bottomLine-column {
+    flex-basis: 33.33%;
+}
+
+.bottomLine-column-text {
+    color: #FFFFFF;
+    font-size: 13px;
+    font-weight: 400;
+}
+/*
+кнопка вверх*/
+
+.footer__fixedButtonUP {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 16px;
+    margin-bottom: 24px;
+}
+
+.fixedButtonUP-button {
+    background-color: #59BD5A;
+    width: 80px;
+    height: 80px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: none;
+}
+
+.information-language-dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-button {
+    background-color: #3B3B3B;
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 16px;
+    width: 150px;
+    cursor: pointer;
+    text-align: left;
+    border: 1px solid #000000; /* Добавляем бордер */
+    display: flex;
+    justify-content: space-between;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #3B3B3B;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+
+.dropdown-content a {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border: 1px solid #000000;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown-content.show {
+    display: block;
+}
+
+.dropdown-button-left {
+    display: flex;
+    gap: 16px;
+}
+
+.dropdown-button-text {
+    color: #FFFFFF;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+
+
+/*                                                              Для страницы Трактир "Пушкина"                                                                          */
+
+.restaurant__container {
+    background-image: url("../images/restourant_img/main/title/photo.svg");
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    min-height: 364px;
+}
+
+.restaurant-name {
+    background-color: #FFFFFF;
+    text-align: center;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.restaurant__title {
+
+}
+
+.restaurant-info {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 46px;
+    padding-left: 38px;
+    padding-right: 38px;
+}
+
+.restaurant-header {
+    padding-bottom: 62px;
+    padding-top: 38px;
+    font-size: 38px;
+    font-weight: 400;
+}
+
